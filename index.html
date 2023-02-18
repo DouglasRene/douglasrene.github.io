@@ -6,27 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
   <title>Portfólio Douglas</title>
 </head>
 
 <body>
   <div class="container">
-    <nav class="menu">
-      <ul>
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
         <li onclick="window.location.href = '#inicio'">Inicio</li>
         <li onclick="window.location.href = '#habilidades'">Habilidades</li>
         <li onclick="window.location.href = '#projetos'">Projetos</li>
         <li onclick="window.location.href = '#contato'">Contato</li>
       </ul>
-    </nav>
+    </section>
     <div class="inicio" id="inicio">
       <div class="inicio-align">
         <div class="img-name">
           <div class="img"></div>
           <h1>Douglas Rene de Almeida</h1>
         </div>
-        <h2>Sou um estudante de tecnologias para desenvolvimento de software, comecei em 2021 no inicio da pandemia e
-          hoje sem duvidas é o que mais gosto de fazer</h2>
+        <div class="descricao">
+          <h2>Sou um estudante de tecnologias para desenvolvimento de software, comecei em 2021 no inicio da pandemia e
+            hoje sem duvidas é o que mais gosto de fazer</h2>
+        </div>
         <div class="op-menu">
           <a href="#habilidades">HABILIDADES</a>
           <a href="#projetos">PROJETOS</a>
@@ -35,42 +42,44 @@
       </div>
     </div>
     <div class="habilidades" id="habilidades">
-      <h2>HABILIDADES</h2>
-      <div class="nuvem">
-        <div id="hab1"></div>
-        <div id="hab2-html"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
-      </div>
-      <div class="nuvem2">
-        <div id="hab1"></div>
-        <div id="hab2-css"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
-      </div>
-      <div class="nuvem3">
-        <div id="hab1"></div>
-        <div id="hab2-js"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
-      </div>
-      <div class="nuvem4">
-        <div id="hab1"></div>
-        <div id="hab2-php"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
-      </div>
-      <div class="nuvem5">
-        <div id="hab1"></div>
-        <div id="hab2-react"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
-      </div>
-      <div class="nuvem6">
-        <div id="hab1"></div>
-        <div id="hab2-ts"></div>
-        <div id="hab3"></div>
-        <div id="hab4"></div>
+      <div class="container-hab">
+        <h2>HABILIDADES</h2>
+        <div class="nuvem">
+          <div id="hab1"></div>
+          <div id="hab2-html"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
+        <div class="nuvem2">
+          <div id="hab1"></div>
+          <div id="hab2-css"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
+        <div class="nuvem3">
+          <div id="hab1"></div>
+          <div id="hab2-js"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
+        <div class="nuvem4">
+          <div id="hab1"></div>
+          <div id="hab2-php"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
+        <div class="nuvem5">
+          <div id="hab1"></div>
+          <div id="hab2-react"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
+        <div class="nuvem6">
+          <div id="hab1"></div>
+          <div id="hab2-ts"></div>
+          <div id="hab3"></div>
+          <div id="hab4"></div>
+        </div>
       </div>
     </div>
     <div class="projetos" id="projetos">
@@ -78,11 +87,13 @@
       <div class="projs">
         <div class="proj">
           <p>Portal Colaborador
-            Desenvolvido para que os colaboradores possam retirar seus vales cesta de forma digitalizada e ter um mural de noticias da equipe do RH</p>
-            <div class="img-proj1"></div>
+            Desenvolvido para que os colaboradores possam retirar seus vales cesta de forma digitalizada e ter um mural
+            de noticias da equipe do RH</p>
+          <div class="img-proj1"></div>
         </div>
         <div class="proj">
-          <p>Transparencia salárial Desenvolvido para que a empresa possa disponibilizar de forma transparente o salario dos colaboradores</p>
+          <p>Transparencia salárial Desenvolvido para que a empresa possa disponibilizar de forma transparente o salario
+            dos colaboradores</p>
           <div class="img-proj2"></div>
         </div>
         <div class="proj">
@@ -99,7 +110,25 @@
       </div>
       <div class="social">
         <div class="i-git" onclick="window.open('https://github.com/DouglasRene', '_blanc')"></div>
-        <div class="i-linkedin" onclick="window.open('https://www.linkedin.com/in/douglas-rene-396607179', '_blanc')"></div>
+        <div class="i-linkedin" onclick="window.open('https://www.linkedin.com/in/douglas-rene-396607179', '_blanc')">
+        </div>
+      </div>
+      <div class="formContato">
+        <form id="contatoForm" method="get" action="mailto:douglas.rene.almeida@mail.com" target="_blank">
+          <div>
+            <label>Endereço de email</label>
+            <input type="email" name="email" class="input-form" placeholder="nome@exemplo.com">
+          </div>
+          <div>
+            <label>Assunto</label>
+            <input type="text" name="Subject" class="input-form" placeholder="Assunto">
+          </div>
+          <div>
+            <label>Exemplo de textarea</label>
+            <textarea name="Body" class="input-form" rows="3"></textarea>
+          </div>
+          <button type="submit" value="click" id="enviar" class="btn-form">Enviar</button>
+        </form>
       </div>
       <div class="footer">
         <p>Desenvolvido por Douglas Rene</p>
@@ -107,6 +136,10 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./nuvem.js"></script>
 </body>
 
 </html>
