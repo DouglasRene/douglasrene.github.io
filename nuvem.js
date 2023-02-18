@@ -1,7 +1,13 @@
 $(document).ready(() => {
+  var largura = 0
+  if(window.innerWidth > 600 ) {
+    largura = window.innerWidth - 300
+  } else {
+    largura = window.innerWidth - 220
+  }
   const loop = () => {
     $(".nuvem").animate({
-      left: '+='+(window.innerWidth - 250)
+      left: '+='+(largura)
     }, 20000, 'linear', () => {
       $(".nuvem").animate({
         left: '-90'
@@ -12,12 +18,12 @@ $(document).ready(() => {
   }
 
   const loop2 = () => {
-    $(".nuvem2").css({left:(window.innerWidth - 250)});
+    // $(".nuvem2").css({left:(window.innerWidth - 300)});
     $(".nuvem2").animate({
       left: '-90'
     }, 25000, 'linear', () => {
       $(".nuvem2").animate({
-        left: '+='+(window.innerWidth - 250)
+        left: '+='+(largura)
       }, 25000, 'linear', () => {
         loop2()
       })
@@ -26,7 +32,7 @@ $(document).ready(() => {
 
   const loop3 = () => {
     $(".nuvem3").animate({
-      left: '+='+(window.innerWidth - 250)
+      left: '+='+(largura)
     }, 21000, 'linear', () => {
       $(".nuvem3").animate({
         left: '-90'
@@ -37,12 +43,12 @@ $(document).ready(() => {
   }
 
   const loop4 = () => {
-    $(".nuvem4").css({left:(window.innerWidth - 250)});
+    // $(".nuvem4").css({left:(window.innerWidth - 300)});
     $(".nuvem4").animate({
       left: '-90'
     }, 23000, 'linear', () => {
       $(".nuvem4").animate({
-        left: '+='+(window.innerWidth - 250)
+        left: '+='+(largura)
       }, 23000, 'linear', () => {
         loop4()
       })
@@ -51,7 +57,7 @@ $(document).ready(() => {
 
   const loop5 = () => {
     $(".nuvem5").animate({
-      left: '+='+(window.innerWidth - 250)
+      left: '+='+(largura)
     }, 19000, 'linear', () => {
       $(".nuvem5").animate({
         left: '-90'
@@ -62,12 +68,12 @@ $(document).ready(() => {
   }
 
   const loop6 = () => {
-    $(".nuvem6").css({left:(window.innerWidth - 250)});
+    // $(".nuvem6").css({left:(window.innerWidth - 300)});
     $(".nuvem6").animate({
       left: '-90'
     }, 24000, 'linear', () => {
       $(".nuvem6").animate({
-        left: '+='+(window.innerWidth - 250)
+        left: '+='+(largura)
       }, 24000, 'linear', () => {
         loop6()
       })
@@ -79,4 +85,5 @@ $(document).ready(() => {
   loop4()
   loop5()
   loop6()
+  console.log(window.innerWidth)
 })
