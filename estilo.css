@@ -97,8 +97,8 @@ body {
 }
 
 .img-proj1 {
-    width: 225px;
-    height: 225px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
     margin-right: 50px;
     background: url('./images/home1.png');
@@ -109,8 +109,8 @@ body {
 }
 
 .img-proj2 {
-    width: 225px;
-    height: 225px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
     margin-right: 50px;
     background: url('./images/home2.png');
@@ -121,8 +121,8 @@ body {
 }
 
 .img-proj3 {
-    width: 225px;
-    height: 225px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
     margin-right: 50px;
     background: url('./images/lista-pacientes.png');
