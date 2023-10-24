@@ -92,6 +92,10 @@ body {
     align-items: flex-end;
 }
 
+.projs p {
+    margin: 0;
+}
+
 .proj {
     width: 225px;
 }
