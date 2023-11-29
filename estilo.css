@@ -338,8 +338,9 @@ body {
     .menu {
         display: flex;
         list-style: none;
-        justify-content: space-between;
+        justify-content: center;
         color: #DB545A;
+        padding: 0;
     }
 
     .menu li {
