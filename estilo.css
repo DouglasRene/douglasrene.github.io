@@ -354,4 +354,9 @@ body {
         border-radius: 10px;
         cursor: pointer;
     }
+
+    .img {
+        width: 180px;
+        height: 180px;
+    }
   }
