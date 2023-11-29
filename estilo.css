@@ -286,13 +286,14 @@ body {
   
     .proj p {
       width: 60%;
+      padding: 15px;
     }
     
     .img-proj1 {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       border-radius: 30%;
-      margin: 0 0 0 20px !important;
+      /*margin: 0 0 0 20px !important;*/
       background: url('./images/home1.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -300,10 +301,10 @@ body {
     }
     
     .img-proj2 {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       border-radius: 30%;
-      margin: 0 0 0 20px !important;
+      /*margin: 0 0 0 20px !important;*/
       background: url('./images/home2.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -311,10 +312,10 @@ body {
     }
     
     .img-proj3 {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       border-radius: 30%;
-      margin: 0 0 0 20px !important;
+      /*margin: 0 0 0 20px !important;*/
       background: url('./images/lista-pacientes.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -332,5 +333,24 @@ body {
     .formContato {
       width: 80% !important;
       margin-top: 30px;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        color: #DB545A;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        border: 1px solid #DB545A;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
     }
   }
