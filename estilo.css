@@ -277,7 +277,7 @@ body {
       width: 100%;
       color: #FFF;
       font-size: 18px;
-      padding: 20px;
+      /*padding: 20px;*/
       display: flex;
       flex-direction: column;
       justify-content: center !important;
@@ -327,7 +327,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      /*padding: 10px;*/
     }
       
     .formContato {
