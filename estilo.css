@@ -359,4 +359,23 @@ body {
         width: 180px;
         height: 180px;
     }
+
+    .i-email {
+        width: 50px;
+        height: 50px
+    }
+
+    .i-git {
+        width: 50px;
+        height: 50px
+    }
+
+    .i-linkedin {
+        width: 50px;
+        height: 50px
+    }
+
+    body {
+        font-size: 14px;
+    }
   }
